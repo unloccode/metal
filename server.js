@@ -25,6 +25,10 @@ app.get('/', (req, res)=>{
     res.json({message: 'I am Unloccode!'});
 });
 
+//routes
+require('./route/auth.routes')(app);
+require('./route/user.routes')(app);
+
 //server
 app.listen(PORT, ()=>{
     console.log(`Server running at http://localhost:${PORT}`);
