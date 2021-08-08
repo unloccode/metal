@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //simple route
 app.get('/', (req, res)=>{
-    res.json({message: 'I am Unloccode!'});
+    res.json({message: "I am Unloccode!"});
 });
 
 //routes
